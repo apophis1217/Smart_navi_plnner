@@ -1,0 +1,52 @@
+/* src/components/layout/Header.css */
+
+.header-bar {
+  height: 64px; /* h-16 (16 * 4px) */
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.header-logo {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb; /* 블루 600 */
+}
+
+.header-tab-container {
+  display: flex;
+  gap: 8px; /* space-x-2 대용 */
+}
+
+.header-tab-btn {
+  padding: 6px 16px;
+  border-radius: 9999px; /* rounded-full */
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* 💡 일반 상태 (선택되지 않은 일차 버튼) */
+.header-tab-btn.inactive {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}
+
+.header-tab-btn.inactive:hover {
+  background-color: #e5e7eb;
+}
+
+/* 💡 활성화 상태 (현재 선택된 일차 버튼) */
+.header-tab-btn.active {
+  background-color: #3b82f6; /* 블루 500 */
+  color: #ffffff;
+}

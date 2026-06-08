@@ -1,0 +1,22 @@
+/* src/App.css */
+
+/* 화면 전체를 채우고 스크롤을 막는 베이스 틀 */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f9fafb; /* gray-50 */
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 헤더 아래쪽 공간: 사이드바와 지도가 가로(Row)로 나란히 서는 공간 */
+.app-main-content {
+  display: flex;
+  flex-direction: row; /* 💡 요게 핵심입니다! 사이드바와 지도를 가로로 배치 */
+  flex: 1;
+  width: 100%;
+  height: calc(100vh - 64px); /* 전체 높이에서 헤더 높이(64px)를 제외 */
+  overflow: hidden;
+}

@@ -1,0 +1,16 @@
+/* src/components/spot/SpotList.css */
+
+.spot-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* 💡 아이템과 아이템 사이의 간격을 8px로 일정하게 띄웁니다 */
+  width: 100%;
+}
+
+.spot-list-empty {
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
+  padding: 32px 0;
+  margin: 0;
+}

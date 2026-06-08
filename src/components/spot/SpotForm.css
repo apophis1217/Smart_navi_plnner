@@ -1,0 +1,68 @@
+/* src/components/spot/SpotForm.css */
+
+.spot-form {
+  padding: 16px;
+  border-bottom: 1px solid #f3f4f6;
+  background-color: rgba(249, 250, 251, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* 위아래 입력창 간의 간격 */
+}
+
+.spot-form-input-container {
+  width: 100%;
+}
+
+.spot-form-input-title {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.spot-form-input-title:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.spot-form-row {
+  display: flex;
+  gap: 8px; /* 메모창과 추가 버튼 사이의 간격 */
+}
+
+.spot-form-input-memo {
+  flex: 1; /* 메모창이 남은 가로 공간을 다 차지하도록 설정 */
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.spot-form-input-memo:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.spot-form-submit-btn {
+  padding: 6px 16px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap; /* 버튼 글자가 아래로 꺾이지 않게 방지 */
+  transition: background-color 0.2s;
+}
+
+.spot-form-submit-btn:hover {
+  background-color: #1d4ed8;
+}
